@@ -1,0 +1,81 @@
+.person {
+    padding: 5rem 20px 5rem;
+    display: block;
+    max-width: 1400px;
+    font-family: Lato, sans-serif;
+}
+
+.titleBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bio {
+    line-height: 24px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #FFF;
+}
+
+.bio figcaption {
+    font-size: 12px;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-block: 3rem;
+}
+
+.photos img {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: auto; /* Ensures images scale properly */
+    max-width: 30%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.photosheader {
+    margin-top: 2rem;
+    color: #FFF;
+}
+
+.person h2 {
+    color: #FFF;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #ff5d52;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D69DF1;
+}
+
+.backButton {
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+.backButtonTop {
+    font-size: 1.5rem;
+    display: inline-block;
+    align-self: center;
+}
+
+
+
+@media screen and (max-width: 720px) {
+    .bio figure {
+        width: auto !important;
+    }
+    .photos img {
+        max-width: 300px;
+    }
+}

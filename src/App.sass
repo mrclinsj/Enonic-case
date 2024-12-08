@@ -1,0 +1,181 @@
+body
+  background-color: #002229
+  color: #595959 // 7:1 AAA #595959 on #fff
+  padding: 0
+  margin: 0
+  font-family: Lato, roboto, arial, serif
+  width: 100%
+  box-sizing: border-box
+  align-items: start
+  display: block
+  top: 0
+  position: relative
+  padding-inline: 2rem
+  overflow-x: hidden
+
+
+  @media (max-width: 768px)
+    padding-inline: 2rem
+
+  @media (max-width: 480px)
+    padding-inline: .5rem
+
+
+html
+  color: #FFF
+
+.back-link
+  padding: 30px
+
+
+
+
+.welcomeTitle
+    font-size: 4rem
+    color: #D69DF1
+    width: 100%
+    margin-top: 5rem
+
+
+  
+    @media (max-width: 768px)
+      font-size: 3rem
+      margin-top: 2rem
+
+    @media (max-width: 480px)
+      font-size: 2rem
+      margin-top: 1rem
+
+
+.welcomeSubTitle
+  font-size: 2rem
+  color: #fff
+  
+  @media (max-width: 768px)
+      font-size: 1.5rem
+
+  @media (max-width: 480px)
+    font-size: 1.5rem
+
+
+.welcomeImage
+  width: 500px
+  height: 500px
+  object-fit: cover  
+
+  @media (max-width: 768px)
+    width: 400px
+    height: 400px
+
+  @media (max-width: 480px)
+    width: 80%
+    height: 80%
+    max-width: 400px
+    max-height: 400px
+    margin-inline: auto
+
+
+
+.welcomeImage2
+  width: 250px
+  height: 250px
+  object-fit: cover  
+  margin-block: auto
+
+  @media (max-width: 768px)
+    padding-top: 4rem
+    width: 200px
+    height: 200px
+
+  @media (max-width: 480px)
+    width: 80%
+    height: 80%
+    max-width: 400px
+    max-height: 400px
+    margin-inline: auto
+    display: none
+
+
+.landingGraphicsField
+  display: flex
+
+
+.titleSpan
+  color: #ffffff
+
+
+.listTitle
+  margin: 5rem 0rem 0rem
+  color: #D69DF1
+
+  @media (max-width: 768px)
+    font-size: 2rem
+    margin: 1rem 1rem 0rem
+
+nav
+  position: fixed
+  left: 0px
+  top: 0px
+  z-index: 99
+  width: 100vw
+  background-color: #00191F
+  display: flex
+  justify-content: end
+  height: 4rem
+  border-bottom: 1px solid #ffffff
+  overflow: hidden
+  border-top: none
+
+
+  @media (max-width: 768px)
+    left: 0
+    max-width: 100%
+    bottom: 0
+    top: auto
+    border-bottom: none
+    border-top: 1px solid #ffffff
+    
+
+
+.logo
+  position: fixed
+  height: auto
+  width: 50px
+  left: 1rem
+  top: .5rem
+
+  @media (max-width: 768px)
+    bottom: 0.5rem
+    left: 0.5rem
+    width: 40px
+    top: auto
+
+
+.navItem
+  color: #D69DF1
+  font-size: 1.5rem
+  padding: 0.5rem
+  font-weight: 700
+  text-decoration: none
+  display: block
+  align-self: center
+
+  &:hover
+    color: #FFFFFF
+    cursor: pointer
+    scale: 1.1
+    transition: 0.5s
+
+  &.active
+    color: #FFD700
+  
+
+
+.welcomeDiv
+  height: vh
+  width: vw
+
+
+
+p, h2
+  color: #FFF

@@ -1,0 +1,56 @@
+$gutter: 30px
+$color: rgba(0, 0, 0, .5)
+
+ul.person-list
+  list-style-type: none
+  padding: 5rem 1rem 0
+  margin: 0
+  background-color: #002229
+  max-width: 1400px
+  overflow: hidden
+
+  @media (max-width: 768px)
+    padding: 1rem 1rem 0
+
+  li
+    display: inline-block
+    margin-bottom: $gutter
+    padding-right: $gutter
+    vertical-align: middle
+    width: calc((100% / 3) - 20px)
+    &:nth-child(3n)
+      padding-right: 0
+
+    a
+      display: inline-block
+      width: 100%
+      position: relative // so div can be centered
+      div
+        bottom: 10px
+        color: #fff
+        left: 50%
+        font-size: 2rem
+        opacity: 0
+        pointer-events: none
+        position: absolute
+        text-shadow: 1px 0 0 $color, 0 -1px 0 $color, 0 1px 0 $color, -1px 0 0 $color
+        transform: translate(-50%)
+        white-space: nowrap
+        background-color: black
+        padding: 0rem .5rem
+        border-radius: 10px
+      &:hover
+        div
+          opacity: 1
+      img
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1)
+        border-radius: 5%
+        filter: grayscale(100%)
+        height: auto
+        margin: auto 0
+        transition: all .3s ease-in-out
+        width: 100%
+
+        &:hover
+          filter: grayscale(0%)
+          transform: scale(1.1)

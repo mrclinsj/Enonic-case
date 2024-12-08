@@ -1,0 +1,103 @@
+.movie {
+    padding: 5rem 20px 5rem;
+    display: block;
+    max-width: 1400px;
+    font-family: Lato, sans-serif;
+  }
+  .movieInfo{
+    margin-left: 3rem;
+  }
+
+  .movieBanner{
+    object-fit: cover;
+    height: 50vH;
+    width: auto;
+    max-width: 50%;
+  }
+
+
+  @media (max-width: 768px) {
+    .movie {
+      padding: .5rem .5rem 5rem;
+      .flexBox{
+        display: block;
+        margin-bottom: 5rem;
+      }
+    }
+    h1 {
+      margin-top: .5rem;
+    }
+    .movieInfo{
+      margin-left: 1rem;
+    }
+    .movieBanner{
+      object-fit: cover;
+      height: auto;
+      width: 70vw;
+      max-width: 70vw;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .movie {
+      padding: 0rem 10px 5rem;
+    }
+    .movieInfo{
+      margin-left: 0rem;
+    }
+    .movieBanner{
+      object-fit: cover;
+      height: auto;
+      width: 90vw;
+      max-width: 90vw;
+    }
+  }
+
+
+  
+  .releaseDate {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .synopsis {
+    margin: 20px 0;
+  }
+  
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 3rem;
+  }
+  
+  .photos img {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 90vw;
+  }
+  
+
+
+  h1, h2, h3, li{
+    color: #FFF;
+  }
+
+  a {
+    color: #D69DF1;
+    font-weight: 700;
+    &:hover{
+      color: #ff5d52;
+    }
+  }
+
+
+  .flexBox{
+    display: flex;
+    margin-bottom: 5rem;
+  }
+
+  .backButton{
+    font-size: 1.5rem;
+  }
