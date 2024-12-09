@@ -3,6 +3,7 @@
     display: block;
     max-width: 1400px;
     font-family: Lato, sans-serif;
+    min-height: 80vh;
 }
 
 .titleBox{
