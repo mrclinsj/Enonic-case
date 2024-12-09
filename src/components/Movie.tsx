@@ -18,7 +18,7 @@ export function Movie() {
             subtitle?: string;
             abstract?: string;
             photos?: string[];
-            imageUrl?: string; // If present, but not strictly needed now
+            imageUrl?: string;
         };
         _references: {
             type: string;

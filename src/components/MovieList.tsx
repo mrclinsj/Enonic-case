@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import "../styles/PersonList.sass"; // Reuse styles from PersonList
+import "../styles/PersonList.sass";
 
 import MOVIES_LIST_QUERY from "../queries/Movies";
 
@@ -41,7 +41,7 @@ export function MovieList() {
     <>
     <h1 className="listTitle">Check out our <span className="titleSpan">movie</span> collection.</h1>
       {data && (
-        <ul className="person-list"> {/* Reuse the 'person-list' class */}
+        <ul className="person-list">
           {data.map((movie, i) => {
             const {
               _id,

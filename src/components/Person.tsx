@@ -51,7 +51,7 @@ export function Person() {
                 const value = json.data.guillotine.get;
                 setData(value)
             });
-    }, []); // useEffect
+    }, []);
 
     if (!data) {
         return null;
