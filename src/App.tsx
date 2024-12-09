@@ -6,6 +6,7 @@ import {LandingPage} from './components/LandingPage'
 import { Header } from './components/Header';
 import { MovieList } from './components/MovieList';
 import { Movie } from './components/Movie';
+import { Footer } from './components/Footer';
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/m" element={<MovieList />} />
         <Route path="/m/:name/:movieId" element={<Movie />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
