@@ -93,4 +93,12 @@ a:hover {
     .photos img {
         max-width: 300px;
     }
+
+
+    .person {
+        padding: .5rem .5rem .5rem;
+    }
+    .person ins {
+        padding: 10px 20px
+    }
 }
