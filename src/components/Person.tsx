@@ -65,6 +65,9 @@ export function Person() {
         displayName
     } = data;
     console.log(data.data.photos)
+
+
+    
     return (
         <>
             <div className={styles.person}>
@@ -83,17 +86,23 @@ export function Person() {
                 />
                 {photos.length > 0 && <h2 className={styles.photosheader}>Photos</h2>}
                 <div className={styles.photos}>
-                    {photos.map((photo, i) => (
-                        <img
-                            key={i}
-                            src={photo.imageUrl}
-                            title={getTitle(photo, displayName)}
-                            alt={getTitle(photo, displayName)}
-                            width="500"
-                        />
-                    ))}
-                </div>
-            <RouterLink to="/p" className={styles.backButton}>
+    {photos.map((photo, i) => (
+        <img
+            key={i}
+            src={photo.imageUrl}
+            title={getTitle(photo, displayName)}
+            alt={getTitle(photo, displayName)}
+            width="500"
+            className={
+                getTitle(photo, displayName).toLowerCase().includes("wachowskis")
+                    ? `wachowskisImage`
+                    : styles.photo
+            }
+        />
+    ))}
+</div>
+
+            <RouterLink to="/p/" className={styles.backButton}>
                 Back to list
             </RouterLink>
             </div>

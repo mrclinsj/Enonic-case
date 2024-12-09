@@ -144,7 +144,7 @@ const firstImageRef = _references?.find(ref => ref.type === 'media:image');
   </div>
 )}
 
-            <RouterLink to="/m" className={styles.backButton}>Back to Movie List</RouterLink>
+            <RouterLink to="/m/" className={styles.backButton}>Back to Movie List</RouterLink>
         </div>
     );
 }

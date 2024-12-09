@@ -13,6 +13,7 @@
     height: 50vH;
     width: auto;
     max-width: 50%;
+    
   }
 
 
@@ -73,12 +74,13 @@
   }
   
   .photos img {
-    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     max-width: 90vw;
   }
   
-
+  img {
+    border-radius: 5px;
+}
 
   h1, h2, h3, li{
     color: #FFF;

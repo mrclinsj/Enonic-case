@@ -33,11 +33,22 @@
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     width: 100%;
-    height: auto; /* Ensures images scale properly */
+    height: auto;
     max-width: 30%;
     max-height: 400px;
     object-fit: cover;
 }
+
+
+img {
+    border-radius: 5px;
+}
+
+.wachowskisImage {
+    max-width: 500px !important;
+    width: 500px;
+}
+  
 
 .photosheader {
     margin-top: 2rem;
