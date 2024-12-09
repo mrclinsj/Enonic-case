@@ -30,7 +30,6 @@
 }
 
 .photos img {
-    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     width: 100%;
     height: auto;
@@ -39,6 +38,10 @@
     object-fit: cover;
 }
 
+.person img {
+    border: 1px solid #D69DF1;
+    border-radius: 5px;
+}
 
 img {
     border-radius: 5px;
