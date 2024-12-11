@@ -3,10 +3,8 @@ const query = `query MovieQuery($movieId: ID!) {
         get(key: $movieId) {
             _name
             displayName
-            # dataAsJson contains trailer, cast, website, release, subtitle, abstract, and photos
             dataAsJson
             
-            # References for images
             _references {
                 type
                 displayName
