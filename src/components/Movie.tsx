@@ -32,7 +32,7 @@ export function Movie() {
             };
         }[];
     } | null>(null);
-
+console.log(movie)
     useEffect(() => {
         fetch(guillotineUrl, {
             method: 'POST',
